@@ -25,3 +25,9 @@ mount  --bind /sys /mnt/sys
     grub-install：错误： efibootmgr failed to register the boot entry: 没有那个文件或目录.  
 ```        
 `mount --bind /sys/firmware/efi/efivars /mnt/sys/firmware/efi/efivars`
+
+---
+* Grub-mkconfig  
+`grub-mkconfig -o {custom_dir}`  
+    Sample:  
+    `grub-mkconfig -o /boot/grub/grub.cfg`
