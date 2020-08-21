@@ -27,6 +27,9 @@ There are several things to pay attention to in the use of zinit:
   # This is very important for the automatic completion of the tab key
   autoload -U compinit
   compinit
+  
+  # Disable zsh's built-in regular expression matching
+  setopt nonomatch
   ```
 
   
