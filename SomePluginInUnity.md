@@ -16,3 +16,10 @@
  sudo apt-add-repository ppa:fixnix/netspeed
  sudo apt-get install indicator-netspeed-unity
  ```
+ 
+ # Unity Themes
+ * numix theme
+ ```
+ sudo add-apt-repository ppa:numix/ppa
+ sudo apt-get install numix-gtk-theme
+ ```
