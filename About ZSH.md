@@ -31,5 +31,23 @@ There are several things to pay attention to in the use of zinit:
   # Disable zsh's built-in regular expression matching
   setopt nonomatch
   ```
+And the next is the config of anaconda
+```shell
+function init_conda(){
+        # echo "func enter"
+        unalias conda
+        origin_str="string"
+        conda_exist="`command -v conda` $origin_str"
+        if [ "$conda_exist" == "conda string" ] ; then
+                echo "conda exist: true"
+                conda $*
+        else
+                echo "conda does not exist"
+                source /opt/anaconda/bin/activate root
+                conda $*
+        fi
+}
 
+alias conda="init_conda"
+```
   
